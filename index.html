@@ -163,10 +163,9 @@ a{color:var(--accent)}
 .fx-in input[type=number]{-moz-appearance:textfield}
 .fx-out b{font-size:22px;font-weight:600;color:var(--accent);letter-spacing:-.02em}
 .fx-eq{align-self:center;color:var(--dim);font-size:16px}
-.fx-chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:11px}
-.fxchip{font-family:inherit;font-size:12px;padding:5px 11px;border:1px solid var(--line-2);
+.fx-chips{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:12px}
+.fxchip{font-family:inherit;font-size:14px;font-weight:600;padding:9px 4px;border:1px solid var(--line-2);
   background:transparent;color:var(--sub);border-radius:99px;cursor:pointer}
-.fxchip i{font-style:normal;color:var(--dim);font-size:11px;margin-inline-start:3px}
 .fxchip:hover{border-color:var(--accent);color:var(--accent)}
 .fx-note{font-size:11.5px;color:var(--dim);margin-top:11px;line-height:1.5}
 
@@ -315,10 +314,10 @@ footer b{color:var(--sub);font-weight:500}
   .day,.v,.card,.mday,footer{box-shadow:none;border:1px solid var(--line)}}
 </style></head><body><div class="wrap">
 <header class="mast">
-<div class="ver"><span class="vnum">v6.2</span><span>עודכן 28.08.2026</span><a href="https://github.com/Liornim/bucharest-trip/commits/main" target="_blank" rel="noopener">היסטוריית שינויים ↗</a><button id="themeBtn" type="button">מצב בהיר</button></div><div class="eyebrow">מסלול הטיול</div>
+<div class="ver"><span class="vnum">v6.3</span><span>עודכן 28.08.2026</span><a href="https://github.com/Liornim/bucharest-trip/commits/main" target="_blank" rel="noopener">היסטוריית שינויים ↗</a><button id="themeBtn" type="button">מצב בהיר</button></div><div class="eyebrow">מסלול הטיול</div>
 <h1>בוקרשט</h1>
 <div class="sub">28 באוגוסט → 1 בספטמבר 2026 · ארבעה ימים<br><b>The Marmorosch</b>, Strada Doamnei 2</div>
-<div class="fx"><div class="fx-h"><span>המרת מטבע</span><i>1 לאי = 0.658 ₪ · 28.08.2026</i></div><div class="fx-row"><label class="fx-in"><span>לאי רומני</span><input id="fxLei" type="number" inputmode="decimal" min="0" step="any" value="100" aria-label="סכום בלאי רומני"></label><span class="fx-eq">=</span><div class="fx-out"><span>שקלים</span><b id="fxIls">65.76</b></div></div><div class="fx-chips"><button class="fxchip" data-lei="12">מיצ'י באובור <i>12 lei</i></button><button class="fxchip" data-lei="5.5">קוברִיגי ב-Luca <i>5.5 lei</i></button><button class="fxchip" data-lei="7">כרטיס מטרו <i>7 lei</i></button><button class="fxchip" data-lei="3">אוטובוס 90 דק׳ <i>3 lei</i></button><button class="fxchip" data-lei="40">מוזיאון הכפר <i>40 lei</i></button><button class="fxchip" data-lei="15">האתניאום <i>15 lei</i></button><button class="fxchip" data-lei="50">סירה בצ'ישמיג'ו <i>50 lei</i></button></div><div class="fx-note">שער יציג מ-28.08.2026. בפועל תקבלו פחות — עמלת המרה בכרטיס או בהמרה מזומן גוזרת בדרך כלל עוד כמה אחוזים.</div></div><div class="tot"><b>33.8</b> ק"מ הליכה בארבעה ימים · יציאה 10:30 · מונית רק ל-Therme וליום הטיסה</div></header>
+<div class="fx"><div class="fx-h"><span>המרת מטבע</span><i>1 לאי = 0.658 ₪ · 28.08.2026</i></div><div class="fx-row"><label class="fx-in"><span>לאי רומני</span><input id="fxLei" type="number" inputmode="decimal" min="0" step="any" value="100" aria-label="סכום בלאי רומני"></label><span class="fx-eq">=</span><div class="fx-out"><span>שקלים</span><b id="fxIls">65.76</b></div></div><div class="fx-chips"><button class="fxchip" data-lei="50">50</button><button class="fxchip" data-lei="100">100</button><button class="fxchip" data-lei="150">150</button><button class="fxchip" data-lei="200">200</button></div><div class="fx-note">שער יציג מ-28.08.2026. בפועל תקבלו פחות — עמלת המרה בכרטיס או בהמרה מזומן גוזרת בדרך כלל עוד כמה אחוזים.</div></div><div class="tot"><b>33.8</b> ק"מ הליכה בארבעה ימים · יציאה 10:30 · מונית רק ל-Therme וליום הטיסה</div></header>
 <div class="tabs" role="tablist">
 <button role="tab" aria-selected="true" data-p="p1">מסלול</button>
 <button role="tab" aria-selected="false" data-p="pm">מפות</button>
@@ -351,7 +350,7 @@ footer b{color:var(--sub);font-weight:500}
 זמני ההליכה הם מהמלון, חושבו ממרחקים אוויריים בין קואורדינטות בתוספת 25% לעיקולי רחוב, בקצב 4.5 קמ"ש. אומדנים ולא ניווט — באוגוסט הוסיפו 10–20%.<br><br>
 שעות ודירוגים מנתוני Google Maps, נכון לאוגוסט 2026 — למעט מוזיאון הכפר, ששעותיו נלקחו מהאתר הרשמי משום שהרישום בגוגל שגוי. אמתו טלפונית לפני עצירה קריטית.<br><br>
 אין תמונות מוטמעות בקובץ. כל מקום מקושר לדף שלו במפות גוגל — שם הצילומים, הביקורות והניווט. הקישורים דורשים אינטרנט; הטקסט עובד אופליין.<br><br>
-שעות הטיסות מאתרי מעקב ולא מהכרטיס — אמתו מול אל על.<br><br><b>גרסה 6.2 · נבנה 28.08.2026.</b> אם מה שאתם רואים לא תואם — רעננו עם Ctrl+Shift+R.</footer></div><script>
+שעות הטיסות מאתרי מעקב ולא מהכרטיס — אמתו מול אל על.<br><br><b>גרסה 6.3 · נבנה 28.08.2026.</b> אם מה שאתם רואים לא תואם — רעננו עם Ctrl+Shift+R.</footer></div><script>
 var tabs=document.querySelectorAll('.tabs button');
 tabs.forEach(function(t){t.addEventListener('click',function(){
   tabs.forEach(function(x){x.setAttribute('aria-selected','false');});
